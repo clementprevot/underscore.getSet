@@ -5,7 +5,8 @@
   "main": "underscore.getSet.js",
   "homepage": "https://github.com/clementprevot/underscore.getSet",
   "version": "1.0.0",
-  "repository": {
+  "repository":
+  {
     "type": "git",
     "url": "git://github.com/clementprevot/underscore.getSet.git"
   },
@@ -23,7 +24,7 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
     "package.json",
     "*.md",
     "*.log",
