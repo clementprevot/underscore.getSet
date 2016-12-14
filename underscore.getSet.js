@@ -221,7 +221,7 @@
   // or create our own underscore object.
   root._ = root._ || {};
   for (var functionName in gs) {
-    if (gs.hasOwnProperties(functionName) && typeof gs[functionName] === 'function') {
+    if (gs.hasOwnProperty(functionName) && typeof gs[functionName] === 'function') {
       root._[functionName] = gs[functionName];
     }
   }
