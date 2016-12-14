@@ -1,6 +1,6 @@
 /**
  * @license
- * underscore.getSet 1.0.0
+ * underscore.getSet 2.0.0
  * Copyright 2015 Clément Prévot <clementp at lumapps dot com>
  * Largely based on Lodash 3.10.1 <https://lodash.com/license>
  * Available under MIT license
@@ -158,8 +158,8 @@
 
 
   // Defining underscore.getSet
-  var _gs = {
-    VERSION: '1.0.0',
+  var gs = {
+    VERSION: '2.0.0',
 
     get: function(object, path, defaultValue) {
       var result = object == null ? undefined : baseGet(object, toPath(path), (path + ''));
@@ -202,23 +202,29 @@
   if (typeof exports !== 'undefined') {
     if (typeof module !== 'undefined' && module.exports)
     {
-      module.exports = _gs;
+      module.exports = gs;
     }
 
-    exports._gs = _gs;
+    exports.gs = gs;
+    exports._gs = gs;
   }
 
 
   // Register as a named module with AMD.
   if (typeof define === 'function' && define.amd)
   {
-    define('underscore.getSet', [], function(){ return _gs; });
+    define('underscore.getSet', [], function(){ return gs; });
   }
 
 
   // Integrate with Underscore.js if defined
   // or create our own underscore object.
   root._ = root._ || {};
-  root._.getSet = root._.gs = _gs;
+  for (var functionName in gs) {
+    if (gs.hasOwnProperties(functionName) && typeof gs[functionName] === 'function') {
+      root._[functionName] = gs[functionName];
+    }
+  }
+  root._.getSet = root._.gs = gs;
 }(this);
 
