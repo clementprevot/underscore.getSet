@@ -1,10 +1,10 @@
 {
-  "name": "underscore.getSet",
+  "name": "underscore.getset",
   "description": "Underscore plugin that implement Lodash _.get and _.set",
   "license": "MIT",
   "main": "underscore.getSet.js",
   "homepage": "https://github.com/clementprevot/underscore.getSet",
-  "version": "3.0.0",
+  "version": "3.0.2",
   "repository":
   {
     "type": "git",

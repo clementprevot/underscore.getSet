@@ -1,5 +1,5 @@
 {
-  "name": "underscore.getSet",
+  "name": "underscore.getset",
   "version": "3.0.1",
   "description": "Underscore plugin that implement Lodash _.get and _.set",
   "keywords": [
