@@ -13,7 +13,7 @@
     "url": "https://github.com/clementprevot/underscore.getSet/issues"
   },
   "license": "MIT",
-  "author": "Clément PREVOT <clement@lumapps.com>",
+  "author": "Clément Prévot <clement.prevot@gmail.com>",
   "main": "underscore.getSet.js",
   "repository": {
     "type": "git",
