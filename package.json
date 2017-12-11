@@ -1,0 +1,30 @@
+{
+  "name": "underscore.getSet",
+  "version": "2.0.0",
+  "description": "Underscore plugin that implement Lodash _.get and _.set",
+  "keywords": [
+    "underscore",
+    "lodash",
+    "get",
+    "set"
+  ],
+  "homepage": "https://github.com/clementprevot/underscore.getSet",
+  "bugs": {
+    "url": "https://github.com/clementprevot/underscore.getSet/issues"
+  },
+  "license": "MIT",
+  "author": "Clément PREVOT <clement@lumapps.com>",
+  "main": "underscore.getSet.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clementprevot/underscore.getSet.git"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">4.0.0",
+    "npm": ">3"
+  }
+}
